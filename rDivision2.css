@@ -11,26 +11,6 @@
     height: 750px !important;
 }
 
-a.author[href="https://www.reddit.com/user/brian1999lin"]:before {
-    content: "FAQ Creator - ";
-    color: #FFF;
-    position: relative;
-    bottom: 1px;
-    font-size: xx-small;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-a.author[href="https://www.reddit.com/user/brian1999lin"] {
-    background: #A05252 !important;
-    color: #FFF !important;
-    border-radius: 2px;
-    margin: 0px !important;
-    padding: 0px 4px 0px 4px !important;
-}
-a.author[href="https://www.reddit.com/user/brian1999lin"]:hover {
-    background: rgb(211, 94, 94) !important;
-}
-
 /* MAJORS */
 
 textarea {
@@ -93,12 +73,14 @@ button {
 /* BODY */
 
 body:before {
-    background: url(%%div2header2%%);
+    background: url(%%div2headerbeigebottom3%%);
     height: 173px;
     background-size: cover;
 }
 body {
-    background-color: #202226;
+    /*background-color: #202226;*/
+    background-image:url(%%background%%);
+    background-repeat: repeat;
 }
 body>.content {
     margin: 173px 335px 0 16px;
@@ -127,10 +109,13 @@ body>.content {
     display: none;
 }
 #header .tabmenu {
-    margin: 25px 20px 25px;
+    margin-top: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
 }
 #header .tabmenu li.selected a {
-    padding: 15px 15px 10px;
+    padding: 5px 5px 5px;
     border-bottom: 2px solid rgb(255, 109, 16);
     color: rgb(255, 109, 16);
 }
@@ -138,8 +123,9 @@ body>.content {
     display: none!important;
 }
 #header .tabmenu li a {
-    color: #C3CBCF;
+    color: black;
     font-size: 8pt !important;
+    padding: 4px !important;
 }
 .sidecontentbox .title h1 {
     color: rgb(195, 203, 207);
@@ -370,6 +356,10 @@ span.RESCharCounter {
     background-color: rgb(255, 109, 16);
 }
 /* END WIKI */
+
+.sitetable .link {
+    margin-bottom:3px !important;
+}
 
 /* POST */
 
@@ -1763,6 +1753,7 @@ a[href="https://goo.gl/unS4WX"] {display: block;margin-left: auto;margin-right: 
     top: 45px;
     right: 45px;
     padding: 4px;
+    z-index: 500;
 }
 
 .side .usertext .md ol li {

@@ -93,7 +93,7 @@ button {
 /* BODY */
 
 body:before {
-    background: url(%%div2headermonument%%);
+    background: url(%%div2header%%);
     height: 173px;
     /*
     position: absolute;
@@ -115,7 +115,8 @@ body>.content {
 /* HEADER */
 
 #header .pagename a {
-    background: url(%%logowhite2%%);
+    display:none;
+    background: url(%%div2logo%%);
     height: 76px;
     width: 306px;
     text-indent: -9999px;
@@ -131,9 +132,10 @@ body>.content {
     transform: scale(.8, .8);
     top: -2px;
     left: -5px;
+    display: none;
 }
 #header .tabmenu {
-    margin: 50px 20px 25px;
+    margin: 75px 20px 25px;
 }
 #header .tabmenu li.selected a {
     padding: 15px 15px 10px;

@@ -1789,3 +1789,11 @@ div.md pre {
 /*Removes reddit's ugly gold/brown give gold color*/
 a.give-gold.gold-give-gold { color: #b3b3b3 !important; }
 a.give-gold.gold-give-gold:hover { color: rgb(255,109,16) !important; }
+
+/*Override modqueue styling*/
+body:not(.listing-page):not(.search-page):not(.comments-page) div.sitetable div.thing {
+    background-color:#363940 !important;
+    color:white !important;
+    margin:8px;
+    padding:5px;
+}

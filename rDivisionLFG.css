@@ -1,0 +1,124 @@
+/******** LFG customizations ********/
+/* Flairs */
+
+/*---------User Flairs---------*/
+
+.flair {
+    background: url(%%flair-spritesheet%%) no-repeat -9999px;
+    border: 0;
+    padding: 0;
+}
+.flair-userps4 { height: 26px; padding-left: 30px; background-position: 0 -702px; line-height: 26px;}
+.flair-userxbone { height: 26px; padding-left: 30px; background-position: 0 -728px; line-height: 26px;}
+.flair-userpc { height: 26px; padding-left: 30px; background-position: 0 -754px; line-height: 26px;}
+
+/* Sidebar markup */
+.side .md h1, .side .md h2, .side .md h3, .side .md h4, .side .md h5, .side .md h6 {
+    position: relative;
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 3px 20px;
+    color: #454e59; }
+
+.side .md h1 { background: #f0f7fd; }
+.side .md h2 { background: #eef8f7; }
+.side .md h3 { background: #eeeaf3; }
+.side .md h4 { background: #faf3e3; }
+.side .md h5 { background: #f4eef0; }
+.side .md h6 { background: #fcfcfc; }
+
+.side .md h1:after, .side .md h2:after, .side .md h3:after, .side .md h4:after, .side .md h5:after, .side .md h6:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 20px 20px;
+    border-color: transparent transparent rgba(0,0,0,.04) transparent; }
+
+.side .md a, .side .md a:visited { color: #0079d3; }
+.side .md h6, .side .md h6 a { text-decoration: none; }
+.side .md p { margin: 10px 20px; }
+
+.side .md table {
+    background-color: transparent;
+    font-size: 10px !important;
+    text-align: center;
+    margin: 20px 10px;
+    min-width: 278px; }
+
+.side .md th, .side .md td { padding: 5px 3px; white-space: wrap; }
+.side .md th {
+    text-align: center;
+    color: #fff;
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 0;
+    border-radius: 0!important; }
+
+.side .md tr:nth-child(odd) td { background-color: #fafbfc; }
+.side .md tr:hover td { background: #eef8f7; }
+
+.side .md .-blocks, .side .md .-lists, .side .md pre, .side .md blockquote, .side .md ul, .side .md ol { margin: 20px; }
+
+.side .md hr {
+    border: 0;
+    height: 0;
+    background: transparent;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+    
+.md td, .md th {
+    border: none !important;
+    text-align: left;
+}
+
+/*Sidebar Buttons*/
+.side a[href="https://goo.gl/qxzbAC"] { /* Xbox One */
+    display:table-cell;
+    height:123px;
+    width:130px;
+    background:url(%%XboxOneLogo%%) no-repeat; background-position: 0px 0px;
+    background-size: 121px;
+}
+.side a[href="https://goo.gl/qxzbAC"]:hover { /* Xbox One */
+    display:table-cell;
+    height:123px;
+    width:130px;
+    opacity:.8;
+    background:url(%%XboxOneLogo%%) no-repeat; background-position: 0px 0px;
+    background-size: 121px;
+}
+.side a[href="https://goo.gl/MPQoeX"] { /* PS4 */
+    display:table-cell;
+    height:123px;
+    width:130px;
+    background:url(%%PS4Logo%%) no-repeat; background-position: 0px 0px;
+    background-size: 121px;
+}
+.side a[href="https://goo.gl/MPQoeX"]:hover { /* PS4 */
+    display:table-cell;
+    height:123px;
+    width:130px;
+    opacity:.8;
+    background:url(%%PS4Logo%%) no-repeat; background-position: 0px 0px;
+    background-size: 121px;
+}
+.side a[href="https://goo.gl/9ZYAQN"] { /* PC */
+    display:table-cell;
+    height:123px;
+    width:130px;
+    background:url(%%PCLogo%%) no-repeat; background-position: 0px 0px;
+    background-size: 121px;
+}
+.side a[href="https://goo.gl/9ZYAQN"]:hover { /* PC */
+    display:table-cell;
+    height:123px;
+    width:130px;
+    opacity:.8;
+    background:url(%%PCLogo%%) no-repeat; background-position: 0px 0px;
+    background-size: 121px;
+}
